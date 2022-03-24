@@ -1,6 +1,6 @@
 # 一个自用docker-compose文件说明
 
-首先你会需要一个docker,之后会需要一个docker-compose
+首先你会需要一个docker,以及会需要一个docker-compose
 
 ```shell
 curl -sSL https://get.docker.com/ | sh

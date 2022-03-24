@@ -1,0 +1,19 @@
+version: '3'
+
+services:
+    hoshino:
+        image: pcrbot/hoshinobot:latest
+        restart: always
+        volumes:
+            - ./Hoshino:/HoshinoBot
+            - ./Hoshino_data:/root/.hoshino
+        depends_on:
+            - gocqhttp
+    gocqhttp:
+        image: pcrbot/gocqhttp:ffmpeg
+        restart: always
+        volumes:
+            - ./gocqhttp_data:/data
+            - ./Hoshino:/HoshinoBot
+
+            
