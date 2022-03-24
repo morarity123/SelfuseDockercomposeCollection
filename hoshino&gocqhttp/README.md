@@ -61,4 +61,13 @@ servers:
 
 ### 进阶使用
 
-To be continue
+~~由于某些原因~~仓库的镜像总是落后一个或者好几个版本，所以如果想用最新版本的hoshino或者go-cqhttp的话，可能需要自己打包
+
+##### go-cqhttp
+
+官方虽然没有提供官方镜像，但是提供了官方dockerfile，只需要clone go-cqhttp的最新源码，在go-cqhttp的文件夹中执行`docker build -t pcrbot/gocqhttp:ffmpeg .` 即可
+
+##### Hoshinobot
+
+Hoshino咖啡佬并没有给出过官方dockerfile，所以需要我们自己手写，我这边提供了一份我自己~~抄~~写的一份dockerfile，直接在有dockerfile的目录里clone Hoshino的源码，然后执行`docker build -t pcrbot/hoshinobot:latest .`即可
+
